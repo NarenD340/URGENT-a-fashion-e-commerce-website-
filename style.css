@@ -1,0 +1,375 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color:whitesmoke;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #f39c12;
+}
+
+.cart-icon {
+  color: #fff;
+  font-size: 2.1rem;
+  cursor: pointer;
+  text-align: auto;
+}
+
+.cart-count {
+  background: red;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  padding: 4rem 2rem;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #111;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Products */
+.products-section {
+  padding: 3rem 2rem;
+}
+
+.section-title h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  text-align:center;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-badge {
+  position: absolute;
+  background: crimson;
+  color: white;
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 3px;
+  top: 10px;
+  left: 10px;
+}
+
+.product-category {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+.product-title {
+  font-size: 1.1rem;
+  margin-top: 0.2rem;
+}
+
+.product-price {
+  margin: 0.5rem 0;
+}
+
+.current-price {
+  font-weight: bold;
+  color: #111;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 5px;
+}
+
+.add-to-cart {
+  padding: 0.5rem 1rem;
+  background: #111;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+}
+
+/* Cart Preview */
+.cart-preview {
+  position:fixed;
+  right: 1rem;
+  top: 70px;
+  width: 300px;
+  background:white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 1001;
+  display: none;
+}
+
+.cart-preview h3 {
+  margin-bottom: 1rem;
+}
+
+.cart-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.cart-item div {
+  margin-top: 0.3rem;
+}
+
+.qty-btn {
+  background: #111;
+  color: rgb(210, 9, 9);
+  border: none;
+  padding: 2px 8px;
+  margin: 0 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.cart-total {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+#checkout-btn {
+  padding: 0.5rem 1rem;
+  background: crimson;
+  color: white;
+  border: 20%;
+  border-color: rgb(227, 69, 158);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#close-cart {
+  padding: 0.5rem 1rem;
+  background: crimson;
+  color: white;
+  border: 20%;
+  border-color: rgb(227, 69, 158);
+  backface-visibility: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background: #111;
+  color: #eee;
+  padding: 3rem 2rem 1rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-content > div {
+  flex: 1 1 250px;
+}
+
+.footer h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer-newsletter input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.footer-newsletter button {
+  padding: 0.5rem 1rem;
+  background: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .cart-preview {
+    right: 0.5rem;
+    width: 90%;
+  }
+}
+.hero {
+  background-image: url('banner.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(143, 121, 121, 0.5); /* dark overlay */
+  z-index: 0;
+}
+
+.hero h1,
+.hero p,
+.hero .btn {
+  position: relative;
+  z-index: 1;
+}
+
+.hero .btn {
+  background: #ffffff;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* darken the image */
+  z-index: 1;
+}
+
+.hero h1, .hero p, .hero .btn {
+  position: relative;
+  z-index: 2;
+}
+
+.filters-section {
+  padding: 20px;
+  background-color:transparent;
+  margin: 0 auto;
+  max-width: auto;
+  border-radius: auto;
+  margin-bottom: auto;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.filter-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.filter-group label {
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}

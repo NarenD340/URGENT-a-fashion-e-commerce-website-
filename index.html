@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>URGENT - Fast Fashion E-commerce</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header id="home">
+    <nav class="navbar">
+      <a href="#home" class="logo">URGENT</a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#collections">Collections</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="cart-icon" id="cart-icon">
+        🛒 <span class="cart-count">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="shop">
+    <h1>Your urgent come to URGRNT</h1>
+    <p>Shop our latest collection with up to 50% off on selected items.</p>
+    <a href="#products-grid" class="btn">Shop Now</a>
+  </section>
+
+  <!-- Filters Section -->
+  <section class="filters-section">
+    <h1>Filter by:</h1>
+    <div class="filter-group">
+      <label>
+        <input type="checkbox" class="filter" value="Men" data-type="category" /> <span>Men</span>
+      </label>
+      <label>
+        <input type="checkbox" class="filter" value="Women" data-type="category" /> <span>Women</span>
+      </label>
+      <label>
+        <input type="checkbox" class="filter" value="Kids" data-type="category" /> <span>Kids</span>
+      </label>
+      <label>
+        <input type="checkbox" class="filter" value="Toys" data-type="category" /> <span>Toys</span>
+      </label>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products-section" id="collections">
+    <div class="section-title">
+      <h2>Our Products</h2>
+    </div>
+    <div class="products-grid" id="products-grid">
+      <!-- JS will inject product cards here -->
+    </div>
+  </section>
+
+  <!-- Cart Preview Modal -->
+  <div class="cart-preview" id="cart-preview">
+  <h3>Your Cart</h3>
+  <div id="cart-items"></div>
+  <div class="cart-total">
+    Total: ₹<span id="cart-total">0</span>
+  </div>
+  <div class="cart-actions">
+    <button id="checkout-btn">Checkout</button>
+    <button id="close-cart">Close</button>
+  </div>
+</div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer" id="about">
+    <div class="footer-content">
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>We are a fast fashion brand delivering trendy styles for men, women, and kids at affordable prices. Quality and style go hand-in-hand here.</p>
+      </div>
+      <div class="footer-contact" id="contact">
+        <h3>Contact</h3>
+        <p>Email: support@fastfashion.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Chennai, India</p>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Stay Updated</h3>
+        <form id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Naren. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
